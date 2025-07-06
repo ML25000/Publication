@@ -28,16 +28,9 @@ To run the simulations and use the provided files, the following software and ve
 
 The repository is organized into the following folders:
 
-- /Code:
-  - AnsysGH.ghpy: The custom-built plugin connecting Grasshopper to Ansys.
-  - Urban_Morphogenesis_Main.gh: The main Grasshopper script for the optimization process.
+  - /Code: AnsysGH, Ansys Connect: The custom-built plugin connecting Grasshopper to Ansys.
+  - Urban_Morphogenesis_Main.gh: The main Grasshopper script for the optimization process.The initial Rhino 3D model of the urban site is embeded in the  grasshopper file (internalised data)
   - Optimisation.scdoc: the Ansys Discovery Live file
-
-- /Data_Input:
-  - Batna_Site_Base_Model.3dm: The initial Rhino 3D model of the urban site (embeded in the grasshopper file with the "internalise data" feature)
-  - DZA_Batna.082010_IWEC.epw: The EPW weather file for Batna, Algeria used for the simulations.
-
-- /Data_Output:
   - Optimization_Results: A  file containing the final set of optimized solutions, including building heights, rotations, and corresponding UTCI values.
 
 --------------------------
@@ -55,7 +48,7 @@ Please follow these steps to reproduce the optimization workflow:
    - Open the Grasshopper script `Urban_Morphogenesis_Main.gh` from the `/Code` folder.
    - **Important:** Inside the Grasshopper script, locate the "File Path" component for the weather data and ensure it correctly points to the `DZA_Batna.082010_IWEC.epw` file in your `/Data_Input` folder.
    - The entire optimization process is managed through Grasshopper's Remote Control Panel (RCP) for a user-friendly experience.
-   - Activate the RCP. This will open a floating window where you can you can click on the key parameters, and start the optimization.
+   - Activate the RCP. This will open a window where you can you can click on the key parameters, and start the optimization.
    - Activate the optimization solver Opossum to start the simulation process. The workflow will begin generating, simulating, and evaluating urban forms in real-time.
 
 --------------------------
