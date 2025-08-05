@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<AddIns>
-	<AddIn name="Ansys Connect"
-         description="Ansys Connect with Grasshopper"
-         assembly="AnsysConnectAddIn.dll"
-         typename="AnsysConnect.AddIn"
-         host="NewAppDomain" />
-</AddIns>
